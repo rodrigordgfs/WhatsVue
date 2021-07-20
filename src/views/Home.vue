@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <toolbar></toolbar>
+    <tabs></tabs>
+    <fab icon="fas fa-comment-alt"></fab>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import Toolbar from '@/components/Home/toolbar'
+import Tabs from '@/components/Home/tabbar'
+import Fab from '@/components/shared/floatActionButton'
+ 
 export default {
   name: 'Home',
+  
   components: {
-    HelloWorld
+    Toolbar,
+    Tabs ,
+    Fab
   }
 }
 </script>
